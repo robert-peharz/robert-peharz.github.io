@@ -32,7 +32,13 @@
     </head>
     
     <body id="page-top" class="index">
-        
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+
+            </div><!-- /.container-fluid -->
+        </nav>
 
         <section>
             <!-- Place this tag where you want the search results to render -->
@@ -65,23 +71,7 @@
                     <h4><i>Artificial Intelligence, Probabilistic Machine Learning, Tractable Probabilistic Models</i> <br></h4>
                     
                 </div>
-                
-                <i class="twittertop" style="display:none;" id="t1">
-                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
-                        <center><a class="twitter-timeline" href="https://twitter.com/ropeharz" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
-                            data-height="300">Tweets
-                            by @dmslucy</a>
-                        <script>!function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");</script></center>
-                    </div>
-                </i>
+
                 
                 <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
                 <b class="expandshow" style="display:none;" id="tab-1">
@@ -107,50 +97,80 @@
                     <div class="allshow" style="display:none;" id="tab-intro-content">
                         <hr class="star-primary">
 
-                        <p>
-                        Robert Peharz received his Master degree in Computer Engineering from Graz University of Technology (TU Graz), Austria (2010). From 2010-2015, he pursued his PhD studies at TU Graz, working on probabilistic graphical models and sum-product networks, with applications to signal processing. From 2015-2017, he was postdoc at the Medical University of Graz, working on interdisciplinary approaches for early recognition of neural maldevelopment via behavioral neuroscience. He was postdoc in the Machine Learning Group (MLG) at the University of Cambridge from 2017-2018. He was Marie-Curie Individual Fellow at MLG Cambridge from 2018-2019. Robert joined Eindhoven University of Technology (TU/e) in November 2019 as an Assistant Professor in the Data and Artificial Intelligence cluster.
-
-                        </p>
+                         <h2>Short Bio</h2>
+                        <div>
+                            Robert Peharz received his PhD from the
+                             <a target="_blank" href="https://www.spsc.tugraz.at/">SPSC Lab</a>, TU Graz (Austria) in
+                            2015, where he was working on probabilistic graphical models and probabilistic circuits
+                            (sum-product networks), with applications to signal processing.
+                            He was a postdoc in the
+                            <a target="_blank" href="https://www.medunigraz.at/idn/">iDN group</a>
+                             at the Medical University of Graz (Austria), working on interdisciplinary
+                            approaches for early recognition of neural maldevelopment via behavioral neuroscience.
+                            From 2017-2018 he was postdoc in the
+                            <a target="_blank" href="http://mlg.eng.cam.ac.uk/">Machine Learning Group (MLG)</a>
+                            at the University of Cambridge
+                            and a Marie-Curie Individual Fellow at MLG Cambridge from 2018-2019.
+                            Since 2019 he is an Assistant Professor in the
+                            <a target="_blank" href="https://uai.win.tue.nl/"> Uncertainty in Artificialy Intelligence (UAI)</a>
+                            at the Eindhoven University of Technology (TU/e, Netherlands).
+                            Robert's interest are probabilistic machine learning, with a
+                            particular focus on principled and tractable inference in artificial intelligence.
+                        </div>
 
                     </div>
                     
                 </div>
             </div>
         </section>
-        
-        <div class="twitterlow" style="display:none;" id="t1">
-            <!-- News Section -->
-            <section  name="news"  id="news">
-                <div class="container lead">
-                    <div style="text-align: left; margin-top:10px" class="col-md-12">
-                        
-                        <b class="noshow" style="display:none;" id="tab-2">
-                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                        </b>
-                        <b class="allshow" style="display:none;" id="tab-news-content">
-                            
-                            <hr class="star-primary">
-                            
-                            <h2>News</h2>
-                            <center><a class="twitter-timeline" href="https://twitter.com/ropeharz" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
-                                by @dmslcy</a>
-                            <script>!function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + "://platform.twitter.com/widgets.js";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, "script", "twitter-wjs");
-                            </script>
-                            </center>
-                        </b>
+
+        <!-- Research Section -->
+        <section  name="publications" id="fullpublications">
+             <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                   <h2>Publications</h2>
+                    See my
+                    <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
+                </div>
+             </div>
+        </section>
+
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+
+                        <h2>Recent Projects</h2>
+                        <img id="einet-pics" src="images/einet_pics.jpg" width="500" border="0" height="263" alt="">
+                        <br>
+                        <span class="label label-success">ICML'20</span>
+                        <b>Einsum Networks: Fast and Scalable Learning of Tractable Probabilistic Circuits</b>
+                        <br>
+                        Robert Peharz, Steven Lang, Antonio Vergari, Karl Stelzner, Alejandro Molina, Martin Trapp, Guy Van Den Broeck, Kristian Kersting, Zoubin Ghahramani
+                        <br>
+                        <br>
+                        Probabilistic circuits are tractable probabilistic models and allow exact and efficient inference.
+                        However, they used to be slow in comparison to deep neural networks.
+                        The reason is that their special structure (which make them tractable in the first place) is not
+                        really suitable for deep learning frameworks such as PyTorch or Tensorflow.
+                        Here we proposed a "smart" implementation of PCs, by squeezing all PC operations into one a
+                        handful large <i>einsum operations</i>.
+                        The result: dramatic speedups and memory savings (similar to other deep learning models), large-scale
+                        generative modeling, including data imputation and outlier detection.
+                        <br>
+                        <a target="_blank" href="http://proceedings.mlr.press/v119/peharz20a.html">Abstract</a> |
+                        <a target="_blank" href="http://proceedings.mlr.press/v119/peharz20a/peharz20a.pdf">Paper</a> |
+                        <a target="_blank" href="https://github.com/cambridge-mlg/EinsumNetworks">Code</a>
                     </div>
                 </div>
-            </section>
-        </div>
-
+            </div>
+        </section>
         
         <hr class="star-primary">
         <footer>
