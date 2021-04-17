@@ -69,6 +69,9 @@
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#fullpublications">Publications</a>
                         </li>
                         <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+                        <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#publications">Recent Projects</a>
                         </li>
                     </ul>
@@ -81,16 +84,18 @@
         <!-- Home Section -->
         <section  name="home" id="home" style="margin-top:40px">
             <div class="container">
+                <hr class="star-primary">
+
                 <div align="left" class="col-md-3">
                     <a target="_blank" href="images/profile.jpg">
                         <img id="mobile-img" src="images/profile.jpg" width="227" border="0" height="300" alt=""></a>
                 </div>
-                <div align="left" class="col-md-4">
+                <div align="left" class="col-md-5">
                     <h2>Robert Peharz</h2>
 
                     <h4>Assistant Professor<br>
                         <a href="https://www.tue.nl/en/">Eindhoven University of Technology</a><br>
-                        <a href="https://www.tue.nl/en/our-university/departments/mathematics-and-computer-science/">Dept. Mathematics and Computer Science</a><br>
+                        <a href="https://www.tue.nl/en/our-university/departments/mathematics-and-computer-science/">Department of Mathematics and Computer Science</a><br>
                         <a href="https://uai.win.tue.nl/">Uncertainty in Artificial Intelligence</a><br>
                         <!--
                          P.O. Box 20537<br>
@@ -134,7 +139,7 @@
                         <div>
                             Robert Peharz received his PhD from the
                              <a target="_blank" href="https://www.spsc.tugraz.at/">SPSC Lab</a>, TU Graz (Austria) in
-                            2015, where he was working on probabilistic graphical models and probabilistic circuits
+                            2015. During his PhD he was working on probabilistic graphical models and probabilistic circuits
                             (sum-product networks), with applications to signal processing.
                             He was a postdoc in the
                             <a target="_blank" href="https://www.medunigraz.at/idn/">iDN group</a>
@@ -155,16 +160,83 @@
             </div>
         </section>
 
+
         <!-- Research Section -->
         <section  name="publications" id="fullpublications">
              <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
-                   <h2>Publications</h2>
-                    See my
-                    <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
+                    <div class="allshow" style="display:none;" id="tab-fullpublications-content">
+                        <hr class="star-primary">
+                        <h2>Publications</h2>
+                        For a full list, please see my
+                        <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
+                    </div>
                 </div>
              </div>
         </section>
+
+
+         <!-- News Section -->
+        <section  name="publications" id="news">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <div class="allshow" style="display:none;" id="tab-news-content">
+                        <hr class="star-primary">
+
+                        <h2>News</h2>
+
+                        <ul>
+                            <li>
+                                  <b>April'21 | </b>
+                                  Tractable Probabilistic Modeling workshop (TPM)
+                                  <a target="_blank" href="https://sites.google.com/view/tpm2021/home">website</a>
+                                  is up and
+                                  <a target="_blank" href="https://sites.google.com/view/tpm2021/call-for-papers"> Call for Papers</a>
+                                  is out.
+                            </li>
+
+                            <li>
+                                <b>April'21 | </b>Our workshop <b><i>Tractable Probabilistic Modeling</i></b>
+                                has been accepted and will be hosted at the conference on <b><i>Uncertainty in Artificial Intellegence.</i></b>
+                                <br>
+                                Organizers: <i>Antonio Vergari, Tahrima Rahman, Robert Peharz, Alejandro Molina, Pedram Rooshenas, Daniel Lowd, Zoubin Ghahramani</i>
+                            </li>
+
+                            <li>
+                                <b>April'21 | </b>  Our paper <b><i>Novel AI driven approach to General Movement Assessment</i></b>
+                                has been accepted at Scientific Report (Springer Nature).
+                                <br>
+                                With <i>Peter Marschik, Simon Reich, Dajie Zhang, Tomas Kulvicius, Sven Bölte, Karin Nielsen-Saines, Florian Pokorny, Robert Peharz, Luise Poustka, Florentin Wörgötter, and Christa Einspieler</i>
+                            </li>
+
+                            <li>
+                                <b>January'21 | </b> Last quarter, I was teaching <i>Data Mining and Machine Learning</i> together with Sibylle Hess.
+                                You can watch some of my recorded lectures on youtube:
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLnjzOl3uW0k0N2ZQzafg-EVZ5lBBVXQuF">Classification 1</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLnjzOl3uW0k3up1jf9i2RbpkTgnJ5Stux">Classification 2</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLnjzOl3uW0k2hI1qfZfB3ccm-FstNZosT">Neural Networks 1</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLnjzOl3uW0k0JRgHlVmoHrFLc58hFnlTX">Neural Networks 2</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLnjzOl3uW0k01kh_av6ye1KKxfEsASpFu">Gaussian Mixtures</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Research Section -->
         <section  name="publications" id="publications">
