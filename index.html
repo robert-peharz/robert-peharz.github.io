@@ -90,6 +90,7 @@
                     <a target="_blank" href="images/profile.jpg">
                         <img id="mobile-img" src="images/profile.jpg" width="227" border="0" height="300" alt=""></a>
                 </div>
+
                 <div align="left" class="col-md-5">
                     <h2>Robert Peharz</h2>
 
@@ -314,12 +315,11 @@
                         <br>
                         <br>
                         Probabilistic circuits are tractable probabilistic models and allow exact and efficient inference.
-                        However, they used to be slow in comparison to deep neural networks.
-                        The reason is that their special structure (which make them tractable in the first place) is not
-                        really suitable for deep learning frameworks such as PyTorch or Tensorflow.
-                        Here we proposed a "smart" implementation of PCs, by squeezing all PC operations into one a
-                        handful large <i>einsum operations</i>.
-                        The result: dramatic speedups and memory savings (similar to other deep learning models), large-scale
+                        However, they used to be slow in comparison to deep neural networks, since their special structure
+                        (which makes them tractable in the first place) does not map nicely onto deep learning frameworks
+                        such as PyTorch or Tensorflow. Here we proposed a "smart" implementation of PCs, by squeezing all PC
+                        operations into one a handful large <i>einsum operations</i>.
+                        The result: dramatic speedups and memory savings, large-scale
                         generative modeling, including data imputation and outlier detection.
                         <br>
                         <a target="_blank" href="http://proceedings.mlr.press/v119/peharz20a.html">Abstract</a> |
