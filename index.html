@@ -66,10 +66,10 @@
                             <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Short Bio</a>
                         </li>
                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-fullpublications-content').show();" href="#fullpublications">Publications</a>
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                            <a onclick="javascript:reset_menus();$('#tab-fullpublications-content').show();" href="#fullpublications">Publications</a>
                         </li>
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Recent Projects</a>
@@ -166,29 +166,6 @@
 
 
 
-
-        <!-- Research Section -->
-        <section  name="publications" id="fullpublications">
-             <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                     <b class="noshow" style="display:none;" id="tab-4">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-fullpublications-content').toggle();">Publications<span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-fullpublications-content">
-                        <hr class="star-primary">
-                        <h2>Publications</h2>
-                        For a full list, please see my
-                        <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
-                    </div>
-                </div>
-             </div>
-        </section>
-
-
-
-
          <!-- News Section -->
         <section  name="publications" id="news">
             <div class="container lead">
@@ -254,6 +231,31 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+        <!-- Research Section -->
+        <section  name="publications" id="fullpublications">
+             <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                     <b class="noshow" style="display:none;" id="tab-4">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-fullpublications-content').toggle();">Publications<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+
+                    <div class="allshow" style="display:none;" id="tab-fullpublications-content">
+                        <hr class="star-primary">
+                        <h2>Publications</h2>
+                        For a full list, please see my
+                        <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
 
 
 
@@ -330,6 +332,38 @@
                         <br>
                         <br>
                         <br>
+
+
+
+                        <img id="dsmgp-pics" src="images/dsmgp_pics.jpg" width="600" border="0" height="315" alt="">
+                        <br>
+                        <span class="label label-success">AISTATS'20</span>
+                        <b>Deep Structured Mixtures of Gaussian Processes</b>
+                        <br>
+                        Martin Trapp, Robert Peharz, Franz Pernkopf, Carl Edward Rasmussen
+
+                        <br>
+                        <br>
+                        Gaussian processes (GPs) are a powerful tool for Bayesian regression, as they represent a prior
+                        over functions, which gets updated to a posterior via Bayesian inference.
+                        Interestingly, this Bayesian update is tractable as it takes cubic time and quadratic memory.
+                        While polynomial, this complexity is still prohibitive for large data, i.e. a few thousand data points.
+                        Here we marry GPs with probabilistic circuits (PCs), yielding <i>Deep Structured Mixture of Gaussian Processes (DSMGPs),</i>
+                        a new process model which elegantly mixes the tractable inference mechanisms of GPs and PCs.
+                        The new model fits data better than several GP approximations while having comparable runtimes.
+                        DSMGPs are also more data efficient than these approximate techniques and allow to model heteroscedastic noise.
+
+                        <br>
+                        <a target="_blank" href="http://proceedings.mlr.press/v108/trapp20a.html">Abstract</a> |
+                        <a target="_blank" href="http://proceedings.mlr.press/v108/trapp20a/trapp20a.pdf">Paper</a> |
+                        <a target="_blank" href="https://slideslive.at/38930154">Video</a> |
+                        <a target="_blank" href="https://github.com/trappmartin/DeepStructuredMixtures">Code</a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
 
 
                         <img id="ps3-pics" src="images/ps3_pics.jpg" width="600" border="0" height="315" alt="">
