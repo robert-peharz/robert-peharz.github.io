@@ -72,6 +72,9 @@
                             <a onclick="javascript:reset_menus();$('#tab-fullpublications-content').show();" href="#fullpublications">Publications</a>
                         </li>
                         <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-tutorials-content').show();" href="#tutorials">Tutorials</a>
+                        </li>
+                        <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Recent Projects</a>
                         </li>
                     </ul>
@@ -259,6 +262,58 @@
 
 
 
+         <!-- Tutorial Section -->
+        <section name="tutorials" id="tutorials">
+             <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                     <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-tutorials-content').toggle();">Publications<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+
+                    <div class="allshow" style="display:none;" id="tab-tutorials-content">
+                        <hr class="star-primary">
+                        <h2>Tutorials on Probabilistic Circuits</h2>
+
+                        Exact and efficient probabilistic inference and learning are becoming more and more mandatory when we want to quickly take complex decisions in presence of uncertainty in real-world scenarios where approximations are not a viable option. In this tutorial, we will introduce probabilistic circuits (PCs) as a unified computational framework to represent and learn deep probabilistic models guaranteeing tractable inference. Differently from other deep neural estimators such as variational autoencoders and normalizing flows, PCs enable large classes of tractable inference with little or no compromise in terms of model expressiveness. Moreover, after showing a unified view to learn PCs from data and several real-world applications, we will cast many popular tractable models in the framework of PCs while leveraging it to theoretically trace the boundaries of tractable probabilistic inference.
+
+                        <br>
+
+                        <br>
+                        <span class="label label-success">IJCAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://ijcai20.org/tutorials/">Website</a>
+
+                        <br>
+                        <span class="label label-success">ECAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://digital.ecai2020.eu/session/probabilistic-circuits-representations-inference-learning-and-applications/">Website</a> |
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECAI20.pdf">Slides</a>
+
+                        <br>
+                        <span class="label label-success">ECML PKDD'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/talks/ECML-PKDD20-tutorial/">Website</a> |
+                        <a target="_blank" href="https://www.youtube.com/watch?v=2RAG5-L9R70">Video</a> |
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECML20.pdf">Slides</a>
+
+                        <br>
+                        <span class="label label-success">AAAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://aaai.org/Conferences/AAAI-20/aaai20tutorials/">Website</a> |
+                        <a target="_blank" href="http://starai.cs.ucla.edu/slides/AAAI20.pdf">Slides</a>
+
+
+                    </div>
+                </div>
+             </div>
+        </section>
+
+
 
         <!-- Research Section -->
         <section  name="publications" id="publications">
@@ -274,7 +329,6 @@
 
                         <h2>Recent Projects</h2>
 
-                        <br>
                         <br>
 
 
