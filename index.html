@@ -63,9 +63,6 @@
                             <a onclick="javascript:reset_menus();" href="#aboutme">About Me</a>
                         </li>
                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#bio">Short Bio</a>
-                        </li>
-                        <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
                         <li class="page-scroll">
@@ -83,6 +80,9 @@
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-projects-content').show();" href="#academic_service">Academic Service</a>
                         </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#bio">Short Bio</a>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
 
@@ -95,40 +95,42 @@
             <div class="container">
                 <hr class="star-primary">
 
-                <div align="left" class="col-md-3">
+                <div align="left" class="col-md-4">
                     <a target="_blank" href="images/profile.jpg">
-                        <img id="mobile-img" src="images/profile.jpg" width="257" border="0" height="340" alt="">
+                        <img id="mobile-img" src="images/profile.png" width="335" border="0" height="340" alt="">
                     </a>
+                    <br>
+                    <br>
+                    <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"><img src="images/scholar.png" width="25" border="0" alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/robert-peharz-278108330/"><img id="linkedin_logo" src="images/linkedin_logo.png" width="30" border="0" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/ropeharz"><img id="twitter_logo" src="images/twitter_logo.png" width="30" border="0" alt=""></a>
+                    <a href="mailto:robert.peharz@tugraz.at"><img src="images/mail_logo.png" width="30" border="0" alt=""></a>
                 </div>
 
                 <div align="left" class="col-md-5">
-                    <h2>Robert Peharz</h2>
+                    <h2><b>Robert Peharz</b></h2>
 
-                    <h4>Assistant Professor<br>
-                        <a target="_blank" href="https://www.tugraz.at/home/">Graz University of Technology</a>
-                        <br>
-                        <a target="_blank" href="https://www.tugraz.at/institute/igi/institute/">Institute of Theoretical Computer Science</a>
-                        <br>
-                         <!--
-                         P.O. Box 20537<br>
-                         1678 Nicosia, CYPRUS<br>-->
-                        <!--
-                        Tel/Fax: <a href="tel:0035722892755">+357-22892755</a> / <a href="tel:0035722892701">01</a><br/>
-                        -->
-                        Email: robert.peharz at tugraz.at<br>
-                        Twitter: <a target="_blank" href="https://twitter.com/ropeharz">@ropeharz</a>
-                        <!--Directions: <a target="_blank" href="https://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a>-->
-                    </h4>
-                    <h4>Formerly postdoc at Medical University Graz (AUT), Marie-Curie Individual Fellow at University of Cambridge (UK), Assistant Professor at TU Eindhoven (NL) <br></h4>
+                    <h4><b>Assistant Professor at TUG</b><br></h4>
+
                     <h4>
                         <b>
                             <i>
-                                artificial intelligence, inference, probabilistic learning, tractability,
-                                decision making, causality, active learning, Bayesian optimization, experimental
-                                design
+                                AI, probabilistic machine learning, inference, tractability,
+                                causality, active learning, Bayesian optimization, experimental design,
+                                physics-informed learning, neurosymbolic learning
                             </i>
                         </b> <br>
                     </h4>
+
+                    <h4>Formerly
+                        <ul>
+                            <li>Postdoc at Medical University Graz</li>
+                            <li>Marie-Curie Individual Fellow at University of Cambridge (UK)</li>
+                            <li>Assistant Professor at TU Eindhoven (NL)</li>
+                        </ul>
+                        <br>
+                    </h4>
+
 
 
                     
@@ -146,44 +148,48 @@
         </section>
 
 
-
-
-        <!-- Bio Section -->
-        <section name="bio" id="bio">
+        <!-- Hiring Section -->
+        <section name="hiring" id="hiring">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
 
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Short Bio<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    <b class="noshow" style="display:none;" id="tab-hiring">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">I'm Hiring!<span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
-                    
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
+
+                    <div class="allshow" style="display:none;" id="tab-hiring-content">
                         <hr class="star-primary">
 
-                         <h2>Short Bio</h2>
+                        <h2 style="color:Red;">I'm Hiring!</h2>
                         <div>
-                            Robert Peharz received his PhD from TU Graz (Austria) in
-                            2015. In his PhD he was working on probabilistic graphical models and probabilistic circuits
-                            (sum-product networks), with applications to signal processing.
-                            He was a postdoc in the
-                            <a target="_blank" href="https://www.medunigraz.at/idn/">iDN group</a>
-                             at the Medical University of Graz (Austria), working on interdisciplinary
-                            approaches for early recognition of neural maldevelopment via behavioral neuroscience.
-                            From 2017-2018 he was a postdoc in the
-                            <a target="_blank" href="http://mlg.eng.cam.ac.uk/">Machine Learning Group (MLG)</a>
-                            at the University of Cambridge
-                            and a Marie-Curie Individual Fellow at MLG Cambridge from 2018-2019.
-                            From 2019-2021 he was an Assistant Professor at the Eindhoven University of Technology
-                            (TU/e, Netherlands).
-                            Currently, he is an Assistant Professor at Graz University of Technology.
-                        </div>
+                            I'm looking for a highly motivated PhD student who is keen to work in the intersection of
+                            <b>causality, tractable probabilistic models and logic</b>.
+                            The position is part of the prestigious Cluster of Excellence
+                            <a target="_blank" href="https://www.bilateral-ai.net//"><b>Bilateral AI</b></a>, led
+                            by
+                            <a target="_blank" href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/sepp-hochreiter/">
+                                Sepp Hochreiter
+                            </a>
+                            and funded by the
+                            <a target="_blank" href="https://www.fwf.ac.at/">Austrian Science Fund</a>.
 
+                            <br>
+                            <br>
+                            <i>
+                            Broad AI aims at solving a wide array of problems, rather than being limited to a single
+                            task or domain. By combining sub-symbolic AI (machine learning, ML) with symbolic AI
+                            (knowledge representation and reasoning, KRR), Bilateral AI provides the means to develop
+                            the foundations of the capabilities and skill acquisition for problem solving by a Broad AI.
+                            </i>
+                            <br>
+                            <br>
+
+                            <a target="_blank" href="https://www.tugraz.at/institute/igi/institute/open-positions/bilai-jobs">Applicant info</a>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
-
 
         <!--              -->
         <!-- News Section -->
@@ -208,9 +214,40 @@
                                 </a>
                                 workshop in Copenhagen. Here are the
                                 <a target="_blank" href="doc/GenU2024.pdf">
-                                    <b><i>slides</i></b>!
+                                    <b><i>slides</i></b>.
                                 </a>
                                 <p style="color:#808080";>(September 2024)</p>
+                            </li>
+                            <li>
+                                Honored to be a finalist for TUG's <b>Excellent Teaching Award</b> for
+                                <b>all 3 of my courses</b> (Machine Learning 1, Reinforcement
+                                Learning, and Probabilistic Machine Learning)!
+                                <span style="color: #ff0000"><b>This honor is awarded to less than 1% of all courses at TUG!!</b></span>
+                                <br>
+                                <a target="_blank" href="images/Pfel.jpg">
+                                    <img id="Pfel" src="images/Pfel.jpg" width="500" border="0" alt="">
+                                </a>
+                                <p style="color:#808080";>(November 2023)</p>
+                            </li>
+                            <li>
+                                As a continuation of last year, Antonio Vergari and I gave a 5-day course on
+                                <b><i>Probabilistic Circuits</i></b> at the
+                                <a target="_blank" href="https://essai2024.di.uoa.gr/">
+                                    <b><i>2nd European Summer School on Artificial Intelligence (ESSAI)</i></b>
+                                </a>
+                                in Athens. Here are the
+                                  <a target="_blank" href="https://github.com/smatmo/ESSAI24-PCs">
+                                    <b><i>slides</i></b>.
+                                  </a>
+                                <p style="color:#808080";>(August 2023)</p>
+                            </li>
+                            <li>
+                                Paper accepted at <b>ICML:</b>
+                                <a target="_blank" href="https://openreview.net/forum?id=0mklK4h0rX">
+                                    <b><i>Exact Soft Analytical Side-Channel Attacks using Tractable Circuits.</i></b>
+                                </a>
+                                With Thomas Wedenig, Rishub Nagpal, Gaëtan Cassiers, Stefan Mangard.
+                                <p style="color:#808080";>(May 2024)</p>
                             </li>
                             <li>
                                 Paper accepted at <b>NeurIPS (oral!):</b>
@@ -232,7 +269,7 @@
                                 I talked about crypto side-channel attacks and other recent projects.
                                 Here are the
                                 <a target="_blank" href="doc/logic_pcs.pdf">
-                                    <b><i>slides</i></b>!
+                                    <b><i>slides</i></b>.
                                 </a>
                                 <p style="color:#808080";>(October 2023)</p>
                             </li>
@@ -241,9 +278,9 @@
                                 <a target="_blank" href="https://neodna.eu/">
                                     <b><i>NEO</i></b>
                                 </a> funded by the <b>European Innovation Council (EIC)</b>.
-                                Next generation DNA data-storage powered by neurosymbolic AI!
+                                Next generation DNA data-storage powered by neurosymbolic AI.
                                 <br>
-                                <a target="_blank" href="images/profile.jpg">
+                                <a target="_blank" href="images/fundedEU.png">
                                     <img id="funded-EU-NEO" src="images/fundedEU.png" width="300" border="0" alt="">
                                 </a>
                                 <p style="color:#808080";>(October 2023)</p>
@@ -255,8 +292,8 @@
                                 (Education, Science and Research) visited our
                                 <a target="_blank" href="https://www.vanillaflow.eu/">
                                     <b><i>VanillaFlow</i></b>
-                                </a> project!
-                                <a target="_blank" href="images/profile.jpg">
+                                </a> project.
+                                <a target="_blank" href="images/visit_minister.jpg">
                                     <img id="polaschek-img" src="images/visit_minister.jpg" width="700" border="0" height="326" alt="">
                                 </a>
                                 <p style="color:#808080";>(September 2023)</p>
@@ -266,7 +303,7 @@
                                 <a target="_blank" href="https://www.vanillaflow.eu/">
                                     <b><i>VanillaFlow</i></b>
                                 </a> funded by the <b>European Innovation Council (EIC)</b>.
-                                AI-guided development of novel vanillin based molecules for redox flow batteries!
+                                AI-guided development of novel vanillin based molecules for redox flow batteries.
                                 <br>
                                 <a target="_blank" href="images/profile.jpg">
                                     <img id="funded-EU-VanillaFlow" src="images/fundedEU.png" width="300" border="0" alt="">
@@ -274,14 +311,14 @@
                                 <p style="color:#808080";>(September 2023)</p>
                             </li>
                             <li>
-                                I gave a 5-day course on <b><i>Probabilistic Circuits</i></b> at the
+                                Antonio Vergari and I gave a 5-day course on <b><i>Probabilistic Circuits</i></b> at the
                                 <a target="_blank" href="https://essai.si/">
                                     <b><i>1st European Summer School on Artificial Intelligence (ESSAI)</i></b>
                                 </a>
                                 in Ljubljana. The course was recorded and can be watched
                                   <a target="_blank" href="https://videolectures.net/ESSAIandACAI2023_peharz_vergari_reasoning/">
-                                    <b><i>here</i></b>!
-                                </a>
+                                    <b><i>here</i></b>.
+                                  </a>
                                 <p style="color:#808080";>(August 2023)</p>
                             </li>
                             <li>
@@ -291,7 +328,7 @@
                                 </a>
                                 in Copenhagen. Here are the
                                 <a target="_blank" href="doc/GeMSS23ProbabilisticCircuits.pdf">
-                                    <b><i>slides</i></b>!
+                                    <b><i>slides</i></b>.
                                 </a>
                                 <p style="color:#808080";>(June 2023)</p>
                             </li>
@@ -852,6 +889,44 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Bio Section -->
+        <section name="bio" id="bio">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Short Bio<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+
+                         <h2>Short Bio</h2>
+                        <div>
+                            Robert Peharz received his PhD from TU Graz (Austria) in
+                            2015. In his PhD he was working on probabilistic graphical models and probabilistic circuits
+                            (sum-product networks), with applications to signal processing.
+                            He was a postdoc in the
+                            <a target="_blank" href="https://www.medunigraz.at/idn/">iDN group</a>
+                             at the Medical University of Graz (Austria), working on interdisciplinary
+                            approaches for early recognition of neural maldevelopment via behavioral neuroscience.
+                            From 2017-2018 he was a postdoc in the
+                            <a target="_blank" href="http://mlg.eng.cam.ac.uk/">Machine Learning Group (MLG)</a>
+                            at the University of Cambridge
+                            and a Marie-Curie Individual Fellow at MLG Cambridge from 2018-2019.
+                            From 2019-2021 he was an Assistant Professor at the Eindhoven University of Technology
+                            (TU/e, Netherlands).
+                            Currently, he is an Assistant Professor at Graz University of Technology.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 
         <br>
         <br>
