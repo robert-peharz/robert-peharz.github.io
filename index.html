@@ -62,6 +62,9 @@
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();" href="#aboutme">About Me</a>
                         </li>
+                        <li>
+                            <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ">Publications</a>
+                        </li>
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
@@ -69,13 +72,10 @@
                             <a onclick="javascript:reset_menus();$('#tab-phds').show();" href="#phds">PhD Students</a>
                         </li>
                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
+                            <a onclick="javascript:reset_menus();$('#tab-projects-content').show();" href="#projects">Recent Paper Highlights</a>
                         </li>
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-tutorials-content').show();" href="#tutorials">Tutorials</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-projects-content').show();" href="#projects">Recent Projects</a>
                         </li>
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-projects-content').show();" href="#academic_service">Academic Service</a>
@@ -224,7 +224,9 @@
                                 Honored to be a finalist for TUG's <b>Excellent Teaching Award</b> for
                                 <b>all 3 of my courses</b> (Machine Learning 1, Reinforcement
                                 Learning, and Probabilistic Machine Learning)!
-                                <span style="color: #ff0000"><b>This honor is awarded to less than 1% of all courses at TUG!!</b></span>
+                                <!-- <span style="color: Blue"> -->
+                                    <b>This honor is awarded to less than 1% of all eligible courses at TUG!</b>
+                                <!-- </span> -->
                                 <br>
                                 <a target="_blank" href="images/Pfel.jpg">
                                     <img id="Pfel" src="images/Pfel.jpg" width="500" border="0" alt="">
@@ -475,102 +477,129 @@
         </section>
 
 
-
-        <!-- Research Section -->
-        <section  name="publications" id="publications">
-             <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                     <b class="noshow" style="display:none;" id="tab-4">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications<span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-publications-content">
-                        <hr class="star-primary">
-                        <h2>Publications</h2>
-                        For a full list, please see my
-                        <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ywkqnqMAAAAJ"> Google Scholar profile </a>
-                    </div>
-                </div>
-             </div>
-        </section>
-
-
-
-
-         <!-- Tutorial Section -->
-        <section name="tutorials" id="tutorials">
-             <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                     <b class="noshow" style="display:none;" id="tab-7">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-tutorials-content').toggle();">Tutorials<span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-tutorials-content">
-                        <hr class="star-primary">
-                        <h2>Tutorials on Probabilistic Circuits</h2>
-
-                        Exact and efficient probabilistic inference and learning are becoming more and more mandatory when we want to quickly take complex decisions in presence of uncertainty in real-world scenarios where approximations are not a viable option. In this tutorial, we will introduce probabilistic circuits (PCs) as a unified computational framework to represent and learn deep probabilistic models guaranteeing tractable inference. Differently from other deep neural estimators such as variational autoencoders and normalizing flows, PCs enable large classes of tractable inference with little or no compromise in terms of model expressiveness. Moreover, after showing a unified view to learn PCs from data and several real-world applications, we will cast many popular tractable models in the framework of PCs while leveraging it to theoretically trace the boundaries of tractable probabilistic inference.
-
-                        <br>
-
-                        <br>
-                        <span class="label label-success">NeuriPS'22</span>
-                        <b>Probabilistic Circuits: Representations, Inference, Learning and Applications </b>
-                        <br>
-                        <a target="_blank" href="https://nips.cc/virtual/2022/tutorial/55809">Website</a>
-
-                        <br>
-                        <span class="label label-success">IJCAI'20</span>
-                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
-                        <br>
-                        <a target="_blank" href="https://ijcai20.org/tutorials/">Website</a>
-
-                        <br>
-                        <span class="label label-success">ECAI'20</span>
-                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
-                        <br>
-                        <a target="_blank" href="https://digital.ecai2020.eu/session/probabilistic-circuits-representations-inference-learning-and-applications/">Website</a> |
-                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECAI20.pdf">Slides</a>
-
-                        <br>
-                        <span class="label label-success">ECML PKDD'20</span>
-                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
-                        <br>
-                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/talks/ECML-PKDD20-tutorial/">Website</a> |
-                        <a target="_blank" href="https://www.youtube.com/watch?v=2RAG5-L9R70">Video</a> |
-                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECML20.pdf">Slides</a>
-
-                        <br>
-                        <span class="label label-success">AAAI'20</span>
-                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
-                        <br>
-                        <a target="_blank" href="https://aaai.org/Conferences/AAAI-20/aaai20tutorials/">Website</a> |
-                        <a target="_blank" href="http://starai.cs.ucla.edu/slides/AAAI20.pdf">Slides</a>
-
-
-                    </div>
-                </div>
-             </div>
-        </section>
-
-
-
         <!-- Research Section -->
         <section  name="projects" id="projects">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
 
                     <b class="noshow" style="display:none;" id="tab-6">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-projects-content').toggle();">Recent Projects<span class="glyphicon glyphicon-chevron-down"></span></button>
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-projects-content').toggle();">Recent Paper Highlights<span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
 
                     <div class="allshow" style="display:none;" id="tab-projects-content">
                         <hr class="star-primary">
 
-                        <h2>Recent Projects</h2>
+                        <h2>Recent Paper Highlights</h2>
 
+                        <br>
+                        <br>
+
+
+                        <img id="exsasca-pics" src="images/exsasca_pics.png" width="600" border="0" height="315" alt="">
+                        <br>
+                        <br>
+                        <span class="label label-success">ICML'24</span>
+                        <b>Exact Soft Analytical Side-Channel Attacks using Tractable Circuits</b>
+                        <br>
+                        Thomas Wedenig, Rishub Nagpal, Gaëtan Cassiers, Stefan Mangard, Robert Peharz
+
+                        <br>
+                        <br>
+                        Cryptographic algorithms are safe&mdash;unless they executed on a physical device...
+                        A prominent attack in information security is the <b>soft analytic side channel attack (SASCA)</b>
+                        which assumes that the attacker has access to a copy of the device under attack.
+                        With this, the attacker can develop so-called templates, i.e. statistical models predicting
+                        intermediate computational results from physical side channels (power trace, temperature,
+                        electromagnetic emissions, timing, etc.).
+                        These "soft guesses" about intermediate results, together with the logical knowledge about
+                        the cryptoalgorithm can be used to infer the secret key with astonishing high success rate.
+                        Basically, one is facing a complicated and high-dimensional probabilistic-logic inference
+                        problem, which is usually approximated with loopy belief propagation.
+                        In this paper, we show that, surprisingly, one can solve such challenging inference problems
+                        even <b>exactly</b> using the power of tractable circuits!
+                        Results are substantially increased top-1 success rates, higher noise resilience
+                        (demonstrating increase vulnerability of protected implementations) and a proof-of-concept
+                        for future attack scenarios.
+                        <br>
+                        <a target="_blank" href="https://proceedings.mlr.press/v235/wedenig24a.html">Abstract</a> |
+                        <a target="_blank" href="https://raw.githubusercontent.com/mlresearch/v235/main/assets/wedenig24a/wedenig24a.pdf">Paper</a> |
+                        <a target="_blank" href="https://github.com/wedenigt/exsasca">Code</a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+
+
+                        <img id="KGE-pics" src="images/gekcs_pics.png" width="600" border="0" height="315" alt="">
+                        <br>
+                        <br>
+                        <span class="label label-success">NeurIPS'23</span> <span style="color:Red;"><b>oral!</b></span>
+                        <b>How to Turn Your Knowledge Graph Embeddings into Generative Models</b>
+                        <br>
+                        Lorenzo Loconte, Nicola Di Mauro, Robert Peharz, Antonio Vergari
+
+                        <br>
+                        <br>
+                        Knowledge graphs (KGs) are probably the most prominent way to represent structured domain information
+                        and are heavily used in services by big players such as Goolge and Amazon.
+                        KGs are basically directed multi-graphs on <i>subjects</i> and <i>objects</i> where links
+                        in the graph correspond to <i>predicates</i>.
+                        Knowledge graph embeddings (KGEs) represent KGs (<b>symbolic</b>) as real- or complex-valued
+                        vectors (<b>sub-symbolic</b>), allowing to link KGs with powerful deep learning approaches.
+                        It turns out that the most common KGEs can be interpreted as (probabilistic) circuits!
+                        This opens the door for generative training, efficient inference and neuro-symbolic tricks, such
+                        as incorporating hard logical knowledge in our KGs.
+
+                        <br>
+                        <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/f4b768188be63b8d2680a46934fd295a-Abstract-Conference.html">Abstract</a> |
+                        <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2023/file/f4b768188be63b8d2680a46934fd295a-Paper-Conference.pdf">Paper</a> |
+                        <a target="_blank" href="https://github.com/april-tools/gekcs">Code</a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <img id="abci-pics" src="images/ABCI_pics.png" width="600" border="0" height="315" alt="">
+                        <br>
+                        <br>
+                        <span class="label label-success">NeurIPS'22</span>
+                        <b>Active Bayesian Causal Inference</b>
+                        <br>
+                        Christian Toth, Lars Lorch, Christian Knoll, Andreas Krause, Franz Pernkopf, Robert Peharz, Julius Von Kügelgen
+
+                        <br>
+                        <br>
+                        Since thousands of years, humans wonder about the nature of causality.
+                        From a technical perspective, this question becomes relatively benign if we put forward a
+                        mathematical model of causality, such as a structural causal model (SCM).
+                        In a nutshell, an SCM is just a dependency network among quantities, where the value of each
+                        quantity is determined as a function of other quantities and exogenous noise.
+                        Thus, an SCM is specified via a directed acyclic graph (DAG), a set of mechanisms (functions doing the
+                        assignment) and a distribution over exogenous variables.
+                        If we completely know the SCM, then we can answer causal queries on all levels of Pearl's
+                        hierarchy, that is (i) observational, (ii) interventional and (iii) counterfactual queries.
+                        <b>Problem: we don't know the SCM.</b> Very often we know even almost nothing about it.
+                        Thus, at its core, causal reasoning is busy with an epistemic challenge, i.e. how much do we
+                        know about the model and how can we work with that.
+                        Whenever there is a epistemic uncertainty, the <b>natural Bayesian reflex</b> is "I put a prior on this
+                        and infer the posterior".
+                        In this paper, we are going full Bayesian over entire SCMs and develop methods to handle the
+                        "computational nightmare" which usually comes with Bayesian computation.
+                        Wonderful features of this approach is that we can directly infer causal queries without
+                        fully knowing the SCM, but uncertainty estimates on them, and use Bayesian epistemic
+                        uncertainties to actively collect interventional data, in order to answer our causal questions
+                        with as little data as possible.
+
+                        <br>
+                        <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/675e371eeeea99551ce47797ed6ed33e-Abstract-Conference.html">Abstract</a> |
+                        <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2022/file/675e371eeeea99551ce47797ed6ed33e-Paper-Conference.pdf">Paper</a> |
+                        <a target="_blank" href="https://github.com/chritoth/active-bayesian-causal-inference">Code</a>
+                        <br>
+                        <br>
+                        <br>
                         <br>
 
 
@@ -761,6 +790,66 @@
                 </div>
             </div>
         </section>
+
+
+
+        <!-- Tutorial Section -->
+        <section name="tutorials" id="tutorials">
+             <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                     <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-tutorials-content').toggle();">Tutorials<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+
+                    <div class="allshow" style="display:none;" id="tab-tutorials-content">
+                        <hr class="star-primary">
+                        <h2>Tutorials on Probabilistic Circuits</h2>
+
+                        Exact and efficient probabilistic inference and learning are becoming more and more mandatory when we want to quickly take complex decisions in presence of uncertainty in real-world scenarios where approximations are not a viable option. In this tutorial, we will introduce probabilistic circuits (PCs) as a unified computational framework to represent and learn deep probabilistic models guaranteeing tractable inference. Differently from other deep neural estimators such as variational autoencoders and normalizing flows, PCs enable large classes of tractable inference with little or no compromise in terms of model expressiveness. Moreover, after showing a unified view to learn PCs from data and several real-world applications, we will cast many popular tractable models in the framework of PCs while leveraging it to theoretically trace the boundaries of tractable probabilistic inference.
+
+                        <br>
+
+                        <br>
+                        <span class="label label-success">NeuriPS'22</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Applications </b>
+                        <br>
+                        <a target="_blank" href="https://nips.cc/virtual/2022/tutorial/55809">Website</a>
+
+                        <br>
+                        <span class="label label-success">IJCAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://ijcai20.org/tutorials/">Website</a>
+
+                        <br>
+                        <span class="label label-success">ECAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://digital.ecai2020.eu/session/probabilistic-circuits-representations-inference-learning-and-applications/">Website</a> |
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECAI20.pdf">Slides</a>
+
+                        <br>
+                        <span class="label label-success">ECML PKDD'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/talks/ECML-PKDD20-tutorial/">Website</a> |
+                        <a target="_blank" href="https://www.youtube.com/watch?v=2RAG5-L9R70">Video</a> |
+                        <a target="_blank" href="http://web.cs.ucla.edu/~guyvdb/slides/ECML20.pdf">Slides</a>
+
+                        <br>
+                        <span class="label label-success">AAAI'20</span>
+                        <b>Probabilistic Circuits: Representations, Inference, Learning and Theory</b>
+                        <br>
+                        <a target="_blank" href="https://aaai.org/Conferences/AAAI-20/aaai20tutorials/">Website</a> |
+                        <a target="_blank" href="http://starai.cs.ucla.edu/slides/AAAI20.pdf">Slides</a>
+
+
+                    </div>
+                </div>
+             </div>
+        </section>
+
 
         <!-- Academic Service Section -->
         <section  name="projects" id="academic_service">
